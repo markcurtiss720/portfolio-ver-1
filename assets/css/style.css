@@ -1,0 +1,60 @@
+:root {
+    --main: #5d5c61;
+    --maintext: #fff;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main);
+    padding: 25px 0;
+}
+
+#title {
+    border: 1 px solid red;
+}
+
+#title {
+    width: 15%;
+    border: 1px solid red;
+}
+
+#title h1 {
+    margin-left: 20px;
+    font-size: 200%;
+    color: var(--maintext)
+}
+
+.header nav {
+    padding: 0 50px;
+}
+
+.list li {
+    display: inline-block;
+    margin: 0 25px;
+    /*color: var(--maintext)*/
+}
+
+a {
+    text-decoration: none;
+   /* color: var(--maintext);*/
+}
+
+
+figure {
+    border: 1px solid red;
+    height: 400px;
+}
+
+figcaption {
+    position: absolute;
+    right: 250px;
+    bottom: 50px;
+    z-index: 1;
+}
