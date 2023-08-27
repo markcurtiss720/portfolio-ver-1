@@ -1,0 +1,42 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100%;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
