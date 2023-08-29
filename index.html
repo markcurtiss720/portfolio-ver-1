@@ -10,7 +10,6 @@
     <body>
 
         <!--Bar at the top of web page containing my name and nav links to the different sections below as well as my soon to be resume-->
-        <!--Working on this first-->
         <header class="header">
             <div id="title">
                 <h1>Mark Curtiss</h1>
@@ -27,52 +26,81 @@
 
         <!--Image of what could be presumed to be me or something like this and a cool subtitile-->
         <figure>
-            <img>
+            <img src="./assets/images/mountains-lake-forest.jpeg" alt="Pristine lake surounded by forest and mountains">
             <figcaption>
-                <h2>Cool Subtitle</h2>
+                <h3>"Each fresh peak ascended teaches something." – Sir Martin Convay.</h3>
             </figcaption>
         </figure>
 
         <!--about me section, contains the title "About Me" as well as a short paragraph about me-->
-        <section class="title" id="about-me">
-            <div>
-                <h3>About Me</h3>
+        <section id="about-me">
+            <div class="title">
+                <h2>About Me</h2>
             </div>
             <article>
-                <p>A paragraph about me</p>
+                <p>Hello, my name is Mark Curtiss. I’m currently attending a front-end/full-stack development bootcamp through University of Utah. I have successfully completed the first few weeks of the course with many more to go but I feel as excited as ever to venture into this kind of career! I live in Utah with my wife, two kids, and our cats. We love being here and with much of both mine and my wife’s family nearby, it’s hard to think of ever moving!</p>
+                <div id="self-pics">
+                  <img src="./assets/images/myself and wife.png" alt="A man and woman standing next to eachother">
+                </div>
             </article>
         </section>
+
         <!--My work section, contains the title "Work" and a spot where I will be able to put links to projects I've worked on-->
-        <section class="title" id="work">
-            <div>
-                <h3>Work</h3>
+        <section id="work">
+            <div class="title">
+                <h2>Work</h2>
             </div>
-            <div>
-                <div>
+            <div id="projects">
+                <div class="sneek-peek">
+                    <img src="assets/images/Horiseon.png" alt="preview for webpaige">
                     <div>
-                        <h4>Horiseon</h4>
+                        <a href="https://markcurtiss720.github.io/horisoeon-optimization/" target="_blank">Horiseon</a>
                         <p>HTML/CSS</p>
+                    </div>
+                </div>
+                <!--a bank box just to prove my code work, the first child element will be bigger than the other child elements.-->
+                <div class="sneek-peek">
+                    <img src="assets/images/coming soon.webp" alt="words COMING SOON surrounded by tech symbols">
+                    <div>
+                        <a href="#" target="_blank">Coming soon</a>
+                        <p>N/A</p>
+                    </div>
+                </div>
+                <div class="sneek-peek">
+                    <img src="assets/images/coming soon.webp" alt="words COMING SOON surrounded by tech symbols">
+                    <div>
+                        <a href="#" target="_blank">Coming soon</a>
+                        <p>N/A</p>
+                    </div>
+                </div>
+                <div class="sneek-peek">
+                    <img src="assets/images/coming soon.webp" alt="words COMING SOON surrounded by tech symbols">
+                    <div>
+                        <a href="#" target="_blank">Coming soon</a>
+                        <p>N/A</p>
                     </div>
                 </div>
             </div>
         </section>
+
         <!--THe contact me section, has title "Contact Me" and a number, an email and a few socials. currently no actual links to anything-->
-        <section class="title" id="contact-me">
-            <div>
-                <h3>Contact Me</h3>
+        <section id="contact-me">
+            <div class="title">
+                <h2>Contact Me</h2>
             </div>
-            <div>
+            <div id="contact-info">
                 <ul class="list">
-                    <li>555-555-5555</li>
+                    <li><a href="#">555-555-5555</a></li>
                     <li><a href="#">markcurtiss@fake.com</a></li>
                     <li><a href="#">Twitter</a></li>
                     <li><a href="#">Linkedin</a></li>
                 </ul>
             </div>
         </section>
-        <!--felt things wouldnt look nice without a footer so here it is-->
-        <footer>
 
+        <!--felt things wouldnt look nice without a footer so here it is-->
+        <footer class="footer">
+            <p>Mark Curtiss' Portfolio</p>
         </footer>
     </body>
 </html>

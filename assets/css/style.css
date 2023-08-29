@@ -1,6 +1,8 @@
 :root {
     --main: #5d5c61;
     --maintext: #fff;
+    --project-background: #7395ae;
+    --details: #557a95
 }
 
 body {
@@ -17,15 +19,13 @@ body {
 }
 
 #title {
-    border: 1 px solid red;
-}
-
-#title {
-    width: 15%;
-    border: 1px solid red;
+    padding: 10px 10px 10px 0;
+    background-color: var(--project-background);
 }
 
 #title h1 {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 20px;
     font-size: 200%;
     color: var(--maintext)
@@ -38,23 +38,203 @@ body {
 .list li {
     display: inline-block;
     margin: 0 25px;
-    /*color: var(--maintext)*/
+    color: var(--maintext);
 }
 
 a {
     text-decoration: none;
-   /* color: var(--maintext);*/
+    color: var(--maintext);
 }
-
 
 figure {
-    border: 1px solid red;
-    height: 400px;
+    position: relative;
 }
+
+figure img {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+
 
 figcaption {
     position: absolute;
-    right: 250px;
-    bottom: 50px;
+    left: 35%;
+    bottom: 75px;
     z-index: 1;
+    color: var(--maintext);
 }
+
+figcaption h3 {
+    font-size: 150%;
+}
+
+
+section {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+    width: 100%;
+}
+
+.title {
+    color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    border-right: 5px solid var(--details)
+}
+
+section div h2 {
+    font-size: 190%;
+}
+
+article {
+    margin: 20px 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 20px auto;
+    
+    color: var(--maintext);
+}
+
+#self-pics img {
+    margin: 25px;
+    max-width: 250px;
+}
+
+article p {
+    background-color: var(--project-background);
+    text-align: center;
+    font-size: 150%;
+    margin: 25px;
+    padding: 50px;
+}
+
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+
+
+#projects div:first-child {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    border: 5px solid var(--details);
+}
+
+#projects div:first-child:hover {
+    border: 6px solid var(--project-background);
+}
+
+.sneek-peek {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    border: 5px solid var(--details);
+}
+
+.sneek-peek img {
+    height: 100%;
+    width: 100%;
+}
+
+.sneek-peek div {
+    background-color: var(--project-background);
+    position: absolute;
+    color: var(--main);
+    top: 75%;
+    padding: 15px 30px 15px 0;
+}
+
+.sneek-peek div a, p {
+    margin-left: 10px;
+}
+
+.sneek-peek:hover {
+    border: 6px solid var(--project-background);
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+#contact-info .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#contact-info .list a {
+    font-size: 150%;
+    color: var(--details);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    background-color: var(--main);
+    width: 100%;
+}
+
+.footer p {
+    color: var(--maintext);
+}
+
+@media screen and (max-width: 786px) {
+
+    section {
+        flex-direction: column;
+        height: auto;
+      }
+    
+    .title {
+        align-items: self-start;
+        border-bottom: 5px solid var(--details);
+        margin: 20px;
+      }
+
+    article {
+        flex-wrap: wrap;
+    }
+
+    #contact-info {
+        height: max-content;
+    }
+
+    #contact-info .list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+
+
+
